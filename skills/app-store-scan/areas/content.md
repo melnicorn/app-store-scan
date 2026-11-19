@@ -1,0 +1,21 @@
+# content: objectionable content, physical harm, intellectual property
+
+Guidelines 1.1, 1.4, 4.1, 4.5.6, 5.2. Greps help little here; skim user-facing strings, bundled assets (images, audio, fonts, data files) and the app's stated purpose. Each check: **ID** `[platform]` (guideline · usual severity when it fails).
+
+**CONT-01** `[all]` (1.1 · blocker) No objectionable content: discriminatory or mean-spirited material, realistic violence against people or animals, encouragement of weapon misuse or facilitating firearm purchases, pornographic material or "hookup" facilitation, inflammatory religious commentary, or content exploiting current tragedies. Follow `objectionable`. Ordinary apps: `pass` in one line.
+
+**CONT-02** `[all]` (1.1.6 · high) No false information or trick functionality: fake device data, fake location, prank calls or anonymous SMS, "scanners" or "detectors" that cannot work. "For entertainment purposes" does not excuse it.
+
+**CONT-03** `[all]` (1.4.3-1.4.5 · high) No encouragement of physical harm: promoting tobacco, vaping, illegal drugs or excessive drinking; DUI checkpoint data not from law enforcement; dares, bets or challenges that risk injury; encouraging phone use in a way that endangers people (for example interacting while driving). Apps used in or around vehicles, sport or machinery should not require attention at dangerous moments; a safety notice is a reasonable recommendation (`warn`, low) when relevant.
+
+**CONT-04** `[all]` (5.2.1, 4.1 · high) Third-party trademarks, names and copyrighted material are licensed or used only descriptively. Start with the app's own name (`CFBundleDisplayName`, product name, in-app wordmarks, icon): abbreviations and nicknames of someone else's product count. Then follow `third_party_brands` and look at how the names are used. Problems: another company's product name or logo in the app name, icon or prominent UI in a way that suggests affiliation; bundled logos, artwork, maps, music, video, text or datasets copied from a game, film, team, league or publisher; reproducing a protected interface. Nominative use ("works with X", in body text, with a "not affiliated with or endorsed by" notice) is normally accepted for companion apps, but a brand in the app name or icon regularly draws a 5.2.1 or 4.1(c) rejection and a request for proof of rights. Report where each mark appears and what the developer would need to show.
+
+**CONT-05** `[all]` (5.2.2 · high) Third-party services and data are used within their terms. If the app reads, displays or depends on content, APIs, protocols or data from a third-party service or product (including unofficial, reverse-engineered or undocumented interfaces; the README and code comments often say so), the developer must be permitted to do so and may be asked for authorization. Identify each such dependency. Unofficial interfaces to someone else's product are a `warn` (medium to high): say what documentation to prepare.
+
+**CONT-06** `[all]` (5.2.3 · blocker) No saving, converting or downloading media from third-party sources (YouTube, SoundCloud, Vimeo, Apple Music, etc.) without authorization, and no facilitating illegal file sharing. Follow `media_download`.
+
+**CONT-07** `[all]` (5.2.4, 5.2.5, 4.5.6 · high) Apple's marks and look. No implying Apple endorses or supplies the app; no UI that mimics an Apple app or product (Finder, App Store, Messages, Activity rings styled like Apple's); no Apple emoji bundled as image assets; Apple product images and names follow Apple's marketing guidelines (no altered device frames, no "i" prefixed lookalike names); Apple Weather data carries attribution.
+
+**CONT-08** `[all]` (4.1 · high) Not a copycat. The name, icon and UI are not a near-copy of an existing popular app, and the app does not impersonate another app or service.
+
+**CONT-09** `[all]` (5.2.1 · medium) Bundled third-party assets are licensed for redistribution. List fonts, icon sets, sounds, images, ML models and datasets that ship in the bundle; confirm a license file or note exists for each non-original item and that required attribution is shown where the license asks for it. Open-source libraries need their notices available (an acknowledgements screen is the usual answer).

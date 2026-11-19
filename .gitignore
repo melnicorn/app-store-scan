@@ -1,0 +1,12 @@
+# Local tool logs
+audit.log
+logs/
+
+# Python
+__pycache__/
+*.pyc
+
+# Scan output (also self-ignored inside the directory)
+.app-store-scan/
+
+.DS_Store
