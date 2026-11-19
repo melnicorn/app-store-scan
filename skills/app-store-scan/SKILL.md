@@ -2,6 +2,7 @@
 name: app-store-scan
 description: Scan an iOS, iPadOS, macOS, tvOS, watchOS or visionOS project for App Store Review Guideline and upload-requirement problems before submission, and produce an HTML report with history. Use when the user asks whether an app is ready for the App Store, wants a pre-submission or App Review check, got a rejection and wants to find related problems, or asks to rescan one area (privacy, payments, accounts, metadata, Mac sandboxing, ...) after fixing something. Works on native Xcode, SwiftPM, React Native, Expo, Flutter, Capacitor, Electron and Tauri projects.
 argument-hint: "[project-path] [area ...] [--full] [--platform ios|macos|...]"
+license: MIT
 compatibility: Needs python3 (standard library only). git, sips and xcodebuild are used when present.
 metadata:
   version: "1.0.0"

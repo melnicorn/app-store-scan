@@ -82,3 +82,7 @@ Then:
 4. Update the dates in the table above and in the `SKILL.md` front matter and intro, and bump `metadata.version`.
 
 This is a static review. It cannot see App Store Connect or run the app, and it does not guarantee approval.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
